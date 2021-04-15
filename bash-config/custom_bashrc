@@ -8,6 +8,31 @@
 # git config --global user.name "Siddharth Kulshrestha"
 # git config --global user.email "kulshresthasiddharth96@gmail.com"
 
+# Git or VCS Config for ZSHRC:
+#setopt prompt_subst
+#autoload -Uz vcs_info
+#zstyle ':vcs_info:*' actionformats \
+    #'%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
+#zstyle ':vcs_info:*' formats       \
+    #'%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
+#zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+
+#zstyle ':vcs_info:*' enable git cvs svn
+
+## or use pre_cmd, see man zshcontrib
+#vcs_info_wrapper() {
+  #vcs_info
+  #if [ -n "$vcs_info_msg_0_" ]; then
+    #echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  #fi
+#}
+#RPROMPT=$'$(vcs_info_wrapper)'
+
+# GIT or VCS Config prompt for BASHRC
+# export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\]'
+
+
+
 # My Aliases
 alias si=nvim
 

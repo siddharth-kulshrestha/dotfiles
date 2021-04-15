@@ -1,3 +1,18 @@
 ## CUSTOM CONFIGS
 
-alias si="nvim"
+# Golang related changes
+# export PATH=$PATH:/usr/local/go/bin
+
+# Git defaults
+# If you have not configured any local gitconfigs then uncomment following to route to global configs
+# git config --global user.name "Siddharth Kulshrestha"
+# git config --global user.email "kulshresthasiddharth96@gmail.com"
+
+# My Aliases
+alias si=nvim
+
+# If you are working with remote machines then uncomment following:
+# alias remotessh="sshpass -p <password> ssh <user>@<host>"
+# alias rmsh="sshpass -p <password> ssh <user>@<host>"
+# alias defssh="sshpass -p <password> ssh"
+

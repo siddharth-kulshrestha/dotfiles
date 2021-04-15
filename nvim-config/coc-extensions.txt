@@ -1,0 +1,5 @@
+coc-go
+coc-java
+coc-json
+coc-python
+coc-tsserver

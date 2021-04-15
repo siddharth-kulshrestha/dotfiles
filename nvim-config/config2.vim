@@ -36,6 +36,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 call plug#end()
+
 " COC default Configuration
 " if hidden is not set, TextEdit might fail.
 set hidden
